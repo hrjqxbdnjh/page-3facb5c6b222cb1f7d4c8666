@@ -1,0 +1,347 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NodeCat — 一只猫，一节点，一个不被打听的下午</title><meta name="description" content="NodeCat 提供由运维团队手动维护的低延迟网络中转节点，按月订阅，按线路分级，适合长期通勤与跨区办公人群。"><meta name="keywords" content="NodeCat,网络中转,私域节点,低延迟线路,流媒体节点,企业网络"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-3658ea3e37.wbfltmt.cn/"><meta property="og:type" content="website"><meta property="og:title" content="NodeCat — 一只猫，一节点，一个不被打听的下午"><meta property="og:description" content="NodeCat 提供由运维团队手动维护的低延迟网络中转节点，按月订阅，按线路分级，适合长期通勤与跨区办公人群。"><meta property="og:url" content="https://p-3658ea3e37.wbfltmt.cn/"><meta property="og:site_name" content="NodeCat"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-3658ea3e37.wbfltmt.cn/", "name": "NodeCat — 一只猫，一节点，一个不被打听的下午", "description": "NodeCat 提供由运维团队手动维护的低延迟网络中转节点，按月订阅，按线路分级，适合长期通勤与跨区办公人群。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="3facb5c6b222cb1f7d4c8666:70927afdb33a08de12a1e011325cb86b87d461d444faba45385f1d9929e4b78c:2bcc3d7018473d8ca7be"></head><body id="top"><style>
+:root{--bg:#ffffff;--ink:#1a1a1a;--soft:#6b6b6b;--line:#e8e8e8;--accent:#ff4d00;--accent-soft:#fff0ea}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+
+/* hero */
+.hero{min-height:100vh;padding:0 6vw;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;padding-bottom:120px}
+.hero::before{content:"";position:absolute;left:0;top:0;width:14px;height:100%;background:var(--accent)}
+.brand-display{font-size:clamp(80px,22vw,360px);line-height:0.82;font-weight:900;letter-spacing:-0.04em;margin:0;color:var(--ink)}
+.brand-display .dot{color:var(--accent)}
+.hero-sub{max-width:620px;font-size:18px;color:var(--soft);margin:28px 0 0;border-left:3px solid var(--ink);padding-left:18px}
+.hero-sub strong{color:var(--ink);font-weight:600}
+.hero-meta{display:flex;gap:32px;flex-wrap:wrap;margin-top:48px;font-size:13px;color:var(--soft);letter-spacing:0.04em}
+.hero-meta span b{color:var(--accent);font-weight:600}
+
+/* section */
+section{padding:96px 6vw}
+section + section{border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 14px;font-weight:800;letter-spacing:-0.02em;max-width:760px}
+.kicker{display:inline-block;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:14px}
+.lede{font-size:19px;color:var(--soft);max-width:680px;margin:0 0 60px}
+
+/* card with left bar */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0}
+.card{border-left:4px solid var(--accent);padding:28px 28px 28px 24px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.card:first-child{border-top:1px solid var(--line)}
+.card:nth-child(n+2){border-top:1px solid var(--line)}
+.card h3{font-size:20px;margin:0 0 10px;font-weight:700}
+.card p{font-size:15px;color:var(--soft);margin:0 0 12px}
+.card .tag{font-size:12px;color:var(--accent);font-weight:600;letter-spacing:0.05em}
+
+/* narrative */
+.narrative{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:start}
+.narrative aside{position:sticky;top:40px}
+.narrative aside .num{font-size:64px;font-weight:900;color:var(--accent);line-height:1}
+.narrative aside p{font-size:14px;color:var(--soft);margin-top:14px;max-width:240px}
+.narrative article p{font-size:17px;margin:0 0 22px;color:#2b2b2b}
+.narrative article p:first-letter{font-size:54px;font-weight:900;float:left;line-height:0.9;padding:6px 12px 0 0;color:var(--accent)}
+@media(max-width:780px){.narrative{grid-template-columns:1fr}.narrative aside{position:static}}
+
+/* plans table */
+.plans-wrap{overflow-x:auto;margin-top:20px}
+table.plans{width:100%;border-collapse:collapse;min-width:680px;font-size:15px}
+table.plans th,table.plans td{text-align:left;padding:22px 20px;border-bottom:1px solid var(--line);vertical-align:top}
+table.plans th{font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--soft);border-bottom:2px solid var(--ink)}
+table.plans td.feature{color:var(--soft);font-weight:500}
+table.plans .plan-name{font-size:18px;font-weight:800;color:var(--ink)}
+table.plans .plan-price{font-size:22px;font-weight:800;color:var(--accent);margin-top:6px;display:block}
+table.plans .plan-annual{font-size:13px;color:var(--soft);margin-top:4px;display:block}
+table.plans tr.featured th{color:var(--accent)}
+table.plans tr.featured th .badge{display:inline-block;background:var(--accent);color:#fff;font-size:10px;padding:2px 8px;border-radius:2px;margin-left:8px;letter-spacing:0.1em}
+.yes{color:var(--accent);font-weight:700}
+.no{color:#c8c8c8}
+.tick{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:18px;font-size:11px;font-weight:700}
+.dash{color:#c8c8c8;font-weight:400}
+
+/* usage */
+.usage{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.step{border-left:4px solid var(--accent);padding:6px 0 6px 20px}
+.step .n{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:0.1em}
+.step h4{font-size:17px;margin:6px 0 8px}
+.step p{font-size:14px;color:var(--soft);margin:0}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:40px 60px}
+@media(max-width:780px){.faq{grid-template-columns:1fr}}
+.qa{border-left:4px solid var(--accent);padding:8px 0 8px 20px}
+.qa h4{font-size:16px;margin:0 0 8px;font-weight:700}
+.qa p{font-size:14px;color:var(--soft);margin:0}
+
+/* clients */
+.clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0}
+.client{border-left:4px solid var(--accent);padding:24px;border-bottom:1px solid var(--line)}
+.client h4{font-size:16px;margin:0 0 8px}
+.client p{font-size:13px;color:var(--soft);margin:0 0 10px}
+.client .meta{font-size:12px;color:var(--accent);letter-spacing:0.05em}
+
+/* footer note */
+.foot-note{padding:80px 6vw 160px;text-align:left}
+.foot-note p{font-size:14px;color:var(--soft);max-width:560px}
+.foot-mark{font-size:clamp(48px,10vw,120px);font-weight:900;letter-spacing:-0.04em;color:var(--ink);line-height:1;margin-bottom:24px}
+.foot-mark span{color:var(--accent)}
+
+/* fixed bottom nav */
+.navbar{position:fixed;left:0;bottom:0;width:100%;background:var(--bg);border-top:1px solid var(--ink);z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6vw;font-size:13px}
+.navbar .brand-mini{font-weight:800;letter-spacing:-0.02em}
+.navbar .brand-mini b{color:var(--accent)}
+.navbar nav{display:flex;gap:24px;flex-wrap:wrap}
+.navbar nav a{color:var(--soft);white-space:nowrap}
+.navbar nav a:hover{color:var(--ink)}
+@media(max-width:560px){
+  .navbar nav{gap:16px}
+  .navbar{font-size:12px}
+  .navbar nav a:nth-child(n+5){display:none}
+}
+</style><main>
+
+<header class="hero">
+  <h1 class="brand-display">Node<span class="dot">Cat</span></h1>
+  <p class="hero-sub">
+    一只猫趴在你的网线尽头，替你把数据叼到该去的地方。<br>
+    <strong>由运维团队手动维护的低延迟中转节点</strong>，按月订阅，按线路分级。
+  </p>
+  <div class="hero-meta">
+    <span>线路分级 <b>3 档</b></span>
+    <span>流量可续 <b>按月重置</b></span>
+    <span>客户端 <b>多平台</b></span>
+    <span>支持 <b>工单 7×24</b></span>
+  </div>
+</header>
+
+<section>
+  <span class="kicker">写在前面</span>
+  <h2>不是为了让你更快，而是为了让你不被打扰。</h2>
+  <p class="lede">NodeCat 不卖“极限速度”，也不承诺“全球覆盖”。我们维护的是一组足够安静、足够稳定的私域节点，让长期通勤者、跨区办公者和内容从业者把网络当成背景，而不是新闻。</p>
+  <div class="cards">
+    <div class="card">
+      <span class="tag">维护方式</span>
+      <h3>手动巡检，不是自动放养</h3>
+      <p>每条线路在上线前由运维成员手动测速、手动标注延迟区间。节点池变动会在工单内同步通知，不会在后台悄悄换掉你正在用的线路。</p>
+    </div>
+    <div class="card">
+      <span class="tag">线路构成</span>
+      <h3>普通池、旗舰池、团队池</h3>
+      <p>三档节点池对应三种使用密度。普通池够看流媒体，旗舰池加了 IPLC 专线和游戏加速优化，团队池留给需要专属带宽的企业用户。</p>
+    </div>
+    <div class="card">
+      <span class="tag">订阅逻辑</span>
+      <h3>按月计费，按年折扣</h3>
+      <p>我们不搞终身账号，也不搞限量抢购。每月重置流量，年付直接打约 17% 折扣，中途可降级、可暂停，不存在“锁死两年”的条款。</p>
+    </div>
+    <div class="card">
+      <span class="tag">适合谁</span>
+      <h3>把网络当水电的人</h3>
+      <p>如果你每天通勤、跨区开会、看海外资料库，NodeCat 适合你。如果你追求极限带宽跑分、或者需要万兆中转，我们目前不在这个赛道上。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="narrative">
+    <aside>
+      <div class="num">01</div>
+      <p>下面这一段写给那些不喜欢被营销话术轰炸的人。你可以跳过。</p>
+    </aside>
+    <article>
+      <p>市面上大多数中转服务都在比谁的节点多、谁的速度快、谁的解锁全。这当然没错，速度是硬指标。但 NodeCat 想做的是另一件更朴素的事：让一条线路在你说“这条不错”之后，尽量保持那个样子，不要三天两头变脸。</p>
+      <p>我们是一个小团队，节点数量不多，也没有铺到六大洲。我们更愿意把精力放在线路质量、工单响应和客户端体验上。你订阅的不是一张节点列表，而是一份“有人在管这事”的承诺。如果你在凌晨三点发现某条线路抖动，发一封工单，第二天早上你会收到一条带具体时间戳的回复，而不是模板道歉。</p>
+      <p>这种节奏注定了 NodeCat 不会成为最大的服务商，但我们也不打算成为。我们只希望成为你订阅清单里最不操心的那一个。一只猫不需要讨好所有人，它只需要把该叼回来的东西叼回来。</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <span class="kicker">套餐与价格</span>
+  <h2>三档订阅，按线路密度分级。</h2>
+  <p class="lede">流量按月重置，可随时升级或降级。年付约为月付的八五折。下方为完整对比，不存在隐藏档位。</p>
+  <div class="plans-wrap">
+    <table class="plans">
+      <thead>
+        <tr>
+          <th>对比项</th>
+          <th>基础版</th>
+          <th class="featured">旗舰版 <span class="badge">推荐</span></th>
+          <th>团队版</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">月费</td>
+          <td><span class="plan-name">基础版</span><span class="plan-price">¥15/月</span><span class="plan-annual">按年付 ¥150/年</span></td>
+          <td><span class="plan-name">旗舰版</span><span class="plan-price">¥35/月</span><span class="plan-annual">按年付 ¥350/年</span></td>
+          <td><span class="plan-name">团队版</span><span class="plan-price">¥85/月</span><span class="plan-annual">按年付 ¥850/年</span></td>
+        </tr>
+        <tr>
+          <td class="feature">每月流量</td>
+          <td>100GB</td>
+          <td>300GB</td>
+          <td>1000GB</td>
+        </tr>
+        <tr>
+          <td class="feature">同时在线设备</td>
+          <td>3 台</td>
+          <td>5 台</td>
+          <td>20 台</td>
+        </tr>
+        <tr>
+          <td class="feature">流媒体解锁</td>
+          <td>基础流媒体</td>
+          <td><span class="tick">✓</span> 全节点原生解锁</td>
+          <td><span class="tick">✓</span> 全节点原生解锁</td>
+        </tr>
+        <tr>
+          <td class="feature">节点池</td>
+          <td>普通线路节点池</td>
+          <td>IPLC 专线 + 游戏加速优化</td>
+          <td>VIP 专属高带宽节点</td>
+        </tr>
+        <tr>
+          <td class="feature">企业定制路由</td>
+          <td><span class="dash">—</span></td>
+          <td><span class="dash">—</span></td>
+          <td><span class="tick">✓</span></td>
+        </tr>
+        <tr>
+          <td class="feature">工单支持</td>
+          <td>标准工单</td>
+          <td>7×24 优先工单</td>
+          <td>专属客户经理</td>
+        </tr>
+        <tr>
+          <td class="feature">适合场景</td>
+          <td>日常通勤、轻度流媒体</td>
+          <td>跨区办公、游戏、高频流媒体</td>
+          <td>团队协作、企业出口、定制路由</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <span class="kicker">使用方式</span>
+  <h2>四步上手，不装多余软件。</h2>
+  <p class="lede">NodeCat 的客户端只做一件事：帮你把节点配置同步到本地。没有广告位，没有社区动态，没有弹窗提醒你升级会员。</p>
+  <div class="usage">
+    <div class="step">
+      <span class="n">步骤 01</span>
+      <h4>选择套餐并订阅</h4>
+      <p>在订阅页选择基础、旗舰或团队档。完成支付后，账号会在约一分钟内开通，节点列表随邮件发送。</p>
+    </div>
+    <div class="step">
+      <span class="n">步骤 02</span>
+      <h4>下载对应平台客户端</h4>
+      <p>Windows、macOS、Android、iOS 均有原生客户端。也可以使用通用订阅链接导入你已有的客户端。</p>
+    </div>
+    <div class="step">
+      <span class="n">步骤 03</span>
+      <h4>导入订阅地址</h4>
+      <p>在用户后台复制你的专属订阅链接，粘贴到客户端的“订阅”或“配置”入口。客户端会自动拉取节点列表并按延迟排序。</p>
+    </div>
+    <div class="step">
+      <span class="n">步骤 04</span>
+      <h4>选择节点并连接</h4>
+      <p>按地区或延迟选择节点，点击连接即可。切换节点不需要重启客户端，连接状态会实时显示在面板顶部。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="kicker">客户端</span>
+  <h2>四个平台，一份订阅。</h2>
+  <p class="lede">同一账号可在多平台登录，同时在线数量按套餐限制。下方为各平台客户端的获取说明。</p>
+  <div class="clients">
+    <div class="client">
+      <h4>Windows 客户端</h4>
+      <p>支持 Windows 10 及以上系统。安装包约 18MB，无需额外运行时。提供系统代理和 TUN 模式两种接管方式。</p>
+      <span class="meta">下载地址以用户后台为准</span>
+    </div>
+    <div class="client">
+      <h4>macOS 客户端</h4>
+      <p>支持 Intel 与 Apple Silicon。支持菜单栏快捷切换、开机自启、分流规则导入。原生适配深色模式。</p>
+      <span class="meta">下载地址以用户后台为准</span>
+    </div>
+    <div class="client">
+      <h4>Android 客户端</h4>
+      <p>支持 Android 7 及以上。提供按应用分流、按 Wi-Fi SSID 自动切换节点等功能。安装包约 12MB。</p>
+      <span class="meta">下载地址以用户后台为准</span>
+    </div>
+    <div class="client">
+      <h4>iOS 客户端</h4>
+      <p>通过 App Store 分发，支持 iPhone 与 iPad。支持按需连接、低数据模式、与 Shortcuts 联动自动切换节点。</p>
+      <span class="meta">下载地址以用户后台为准</span>
+    </div>
+    <div class="client">
+      <h4>通用订阅链接</h4>
+      <p>如果你已经在使用第三方客户端，NodeCat 提供标准格式订阅链接，可导入大部分主流客户端，无需更换软件。</p>
+      <span class="meta">在用户后台“订阅”页获取</span>
+    </div>
+    <div class="client">
+      <h4>路由器配置</h4>
+      <p>团队版用户可获得路由器端配置文件，适用于 OpenWrt 等固件，可将整个局域网出口指向指定节点。</p>
+      <span class="meta">仅团队版提供</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="kicker">常见问题</span>
+  <h2>关于节点、流量和订阅的那些事。</h2>
+  <p class="lede">以下问题来自真实工单的整理。如果你在这里找不到答案，直接发工单，我们会在 24 小时内回复。</p>
+  <div class="faq">
+    <article class="qa">
+      <h4>NodeCat 的节点部署在哪些地区？</h4>
+      <p>节点池覆盖东亚、东南亚、北美和欧洲主要城市。具体地区列表会随线路调整在用户后台同步更新，我们不对外固定公布节点 IP，以避免被针对性封锁。</p>
+    </article>
+    <article class="qa">
+      <h4>流量是按自然月重置还是按订阅周期重置？</h4>
+      <p>按订阅周期重置。如果你在每月 15 日订阅，流量会在次月 15 日重置。未用完的流量不结转到下月。</p>
+    </article>
+    <article class="qa">
+      <h4>可以同时在不同设备上使用吗？</h4>
+      <p>可以。同时在线设备数量按套餐限制：基础版 3 台、旗舰版 5 台、团队版 20 台。超出限制时，最早连接的设备会被自动下线，不会锁号。</p>
+    </article>
+    <article class="qa">
+      <h4>年付和月付的功能有区别吗？</h4>
+      <p>没有区别。年付只是价格上的折扣，功能与月付完全一致。我们不会把核心功能放进年付专属包里。</p>
+    </article>
+    <article class="qa">
+      <h4>如果某条线路不稳定怎么办？</h4>
+      <p>先在客户端切换到其他节点。如果整组线路都出现异常，请发工单附带你所在地区、使用时段和客户端日志截图，我们会定向排查并回复。</p>
+    </article>
+    <article class="qa">
+      <h4>支持退款吗？</h4>
+      <p>订阅开通后 24 小内未产生明显流量的账号可申请全额退款。超过 24 小时或已使用超过 1GB 流量的账号不再支持退款，但可以随时取消续费。</p>
+    </article>
+    <article class="qa">
+      <h4>客户端会收集我的使用数据吗？</h4>
+      <p>客户端仅记录连接状态、节点延迟和流量统计，用于你在本地查看。这些数据不上传服务器，也不会用于任何分析用途。</p>
+    </article>
+    <article class="qa">
+      <h4>可以升级或降级套餐吗？</h4>
+      <p>可以。升级套餐按剩余天数补差价，降级在下个订阅周期生效。团队版转其他套餐需要联系客户经理处理。</p>
+    </article>
+  </div>
+</section>
+
+<section class="foot-note">
+  <div class="foot-mark">Node<span>Cat</span>.</div>
+  <p>NodeCat 由独立运维团队维护，不隶属于任何大型云服务商。我们只做一件事：把节点管好，把工单回好，把价格压在合理区间。如果你觉得现在的服务商太吵，欢迎来试试一只安静的猫。</p>
+</section>
+
+</main>
+
+<div class="navbar">
+  <div class="brand-mini">Node<b>Cat</b></div>
+  <nav>
+    <a href="#intro">关于</a>
+    <a href="#plans">套餐</a>
+    <a href="#usage">使用方式</a>
+    <a href="#clients">客户端</a>
+    <a href="#faq">常见问题</a>
+    <a href="#">订阅</a>
+  </nav>
+</div><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
